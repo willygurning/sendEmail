@@ -8,7 +8,8 @@ use App\Mail\WillyEmail;
 class WillyController extends Controller
 {
     public function index(){
-        Mail::to("willygurning17@gmail.com")->send(new WillyEmail());
+        Mail::to("upscale.campaign61@gmail.com")->send(new WillyEmail());
         return "Email telah terkirim";
     }
 }
+// , upscale.campaign61@gmail.com, upscale.campaign62@gmail.com, "willygurning17@gmail.com",

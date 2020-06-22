@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/kirimemail','WillyController@index');
+
+Route::get('/siswa','StudentController@index');
+Route::get('/siswa/export_excel','StudentController@export_excel');

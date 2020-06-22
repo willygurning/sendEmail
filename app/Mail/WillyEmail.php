@@ -29,7 +29,13 @@ class WillyEmail extends Mailable
     public function build()
     {
         return $this->from('pengirim@email.com')
-                    ->view('emailku');
+                    // ->cc(['upscale.campaign61@gmail.com'])
+                    ->view('emailku')
+                    ->attach(public_path('\COMPANY PROFILE.pdf'), [
+                        'as' => 'COMPANY PROFILE.pdf',
+                        'mime' => 'application/pdf',
+                    ]);
+               
     //                 ->with(
     //                     [
     //                         'nama' => 'Willy gurning',
